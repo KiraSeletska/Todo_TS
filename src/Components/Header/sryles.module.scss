@@ -1,0 +1,99 @@
+.headerWrapper{
+display: grid;
+grid-template-columns: 2fr 1fr;
+margin: 15px;
+}
+.calendarWrapper{
+    display: flex;
+    width: auto;
+}
+.calendarWindow{
+    width: 210px;
+    overflow: hidden;
+   // padding: 15px;
+}
+.calendar{
+   // border: 1px solid rgb(0, 0, 0);
+    display: flex;
+   // margin: 5px;
+   // transform: translateX(-100px);
+}
+.calendarBtn{
+    width: 10px;
+    height: 100%;
+    padding: 0;
+    text-align: center;
+    margin: 5px;
+    border: none;
+    font-size: 10px;
+    cursor: pointer;
+   // background-color: rgb(207, 115, 115);
+    color: rgb(100, 100, 100);
+}
+
+h3{
+    width: 100%;
+    margin: 0;
+}
+
+.month{
+  //  border: 1px solid rgb(13, 214, 24);
+    width: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+   
+
+}
+.daysOfWeek{
+    font-size: 6px;
+    width: 210px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.daysOfWeek div{
+    width: 28px;
+    overflow: hidden;
+}
+.days{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    width: 210px;
+}
+.day{
+    border: 1px solid rgb(190, 190, 190);
+    width: 28px;
+    height: 28px;
+    font-size: 10px;
+    cursor: pointer;
+    
+}
+.tonDisplay{
+    color: rgb(218, 218, 218);
+    background-color: rgb(190, 190, 190, 0);
+}
+.form{
+    width: 60%;
+    max-width: 500px;
+    margin: auto;
+    z-index: 100;
+    position: absolute;
+    background-color: rgb(204, 255, 109);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.form input{
+    margin: 10px;
+    width: 91%;
+}
+.form button{
+    width: 30px;
+}
+.close {
+    display: none;
+}

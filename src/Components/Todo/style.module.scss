@@ -1,0 +1,84 @@
+.mainDiv{
+    background-color: rgb(255, 255, 255, 0.5);
+margin: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    width: auto;
+   
+}
+.mainDivDone{
+    background-color: rgb(255, 255, 255, 0.5);
+    margin: 15px;
+    text-decoration: line-through;
+    color: gray;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+
+.mainDivDone button{
+    height: 30px;
+    margin: auto;
+    border-bottom: 2px solid green;
+    background-color: rgb(255, 255, 255, 0);
+    border: none;
+    cursor: pointer;
+}
+
+.mainDiv button{
+    height: 30px;
+    margin: auto;
+    border-bottom: 2px solid green;
+    background-color: rgb(255, 255, 255, 0);
+    border: none;
+    cursor: pointer;
+}
+
+.infoDiv > input {
+  margin-left: 15px;
+   
+
+}
+.infoDiv{
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+display: flex;
+
+}
+.time{
+    font-size: 10px;
+    margin-right: 10px;
+}
+.text{
+    width: 80%;
+    text-align: start;
+    margin-left: 10px;
+}
+.repositoryInfo{
+    text-align: end;
+  margin: 0 10px 10px 0;
+  font-size: 9px;
+  color: rgb(170, 170, 170);
+}
+
+.editTodo{
+    width: 300px;
+    margin: auto;
+    margin-top: -30px;
+    height: auto;
+    z-index: 100;
+    display: grid;
+    grid-template-columns: 1fr 35px;
+    gap: 20px;
+    align-items: center;
+    background-color: rgba(255, 255, 255);
+    box-shadow:4px 4px 10px rgba(0,0,0,0.2);
+
+}
+.editTodoClose{
+ display: none;
+}
+.editTodoInput{
+   border: none;
+   outline: none;
+   border-bottom: 1px solid rgb(214, 214, 214);
+
+}

@@ -1,0 +1,150 @@
+.windowDiv{
+    width: 300px;
+    height: 122px;
+    position: absolute;
+    background-color:  rgba(255, 255, 255);
+margin: 56px 50px;
+z-index: 1;
+box-shadow: 0 5px 25px 0px rgba(0, 0, 0, .2);
+display: flex;
+flex-direction: column;
+font-family: 'Montserrat', sans-serif;
+}
+.formWindowDiv{
+    display: flex;
+    justify-content: space-between;
+}
+.windowDivClose {
+    display: none;
+}
+
+.windowDiv form input{
+    margin: 30px 0 0 25px;
+    border: none;
+    outline:none;
+    border-bottom: 1px solid rgb(217, 217, 217);
+    width: 200px;
+    
+}
+.windowDiv form input::placeholder{
+    font-size: 10px;
+    color: rgb(189, 189, 189);
+    font-family: 'Montserrat', sans-serif;
+}
+.windowDiv form input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+.windowDiv form input::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+.windowDiv form input:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+.windowDiv form input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+.windowDiv form input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+.windowDiv form input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+.windowDiv form input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+.windowDiv form input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+
+.windowDiv button{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: none;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    transition: 1s;
+}
+
+.windowDiv button:hover{
+    background-color: rgb(255, 219, 219);
+    transition: 1s;
+}
+
+.radioDiv{
+    gap: 5px;
+    justify-content: center;
+    }
+    
+    .radioDiv input[type='radio']{
+      cursor: pointer;
+    }
+    .radioDiv label {
+      cursor: pointer;
+    
+    }
+    
+    .radioDiv input[type='radio'] {
+      position: relative;
+      height: 10px;
+      width: 10px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      outline: none;
+    }
+    
+    .radioDiv input[type='radio']::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+     
+    }
+    
+    .radioDiv input:checked::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+      background-color: dodgerblue;
+      transform: translate(-50%, -50%);
+      visibility: visible;
+    }
+    
+    .radioInputBlue[type='radio']::before{
+      border: 2px solid rgb(154, 175, 252);
+    }
+    .radioInputBlue[type='radio']:checked::after{
+      background-color:rgb(154, 175, 252);
+    }
+    
+    .radioInputGreen[type='radio']::before{
+      border: 2px solid rgb(178, 255, 156);
+    }
+    .radioInputGreen[type='radio']:checked::after{
+      background-color:rgb(178, 255, 156);
+    }
+    
+    .radioInputRed[type='radio']::before{
+      border: 2px solid rgb(248, 133, 133);
+    }
+    .radioInputRed[type='radio']:checked::after{
+      background-color: rgb(248, 133, 133);
+    }
+    
+    .radioInputYellow[type='radio']::before{
+      border: 2px solid rgb(255, 250, 187);
+    }
+    .radioInputYellow[type='radio']:checked::after{
+      background-color:rgb(255, 250, 187);
+    }
+    
+    .radioInputPurpur[type='radio']::before{
+      border: 2px solid rgb(221, 174, 255);
+    }
+    .radioInputPurpur[type='radio']:checked::after{
+      background-color:rgb(221, 174, 255);
+    }
+    .radioInputOriginal[type='radio']::before{
+    border: 2px solid rgb(215, 215, 215);
+    }
+    .radioInputOriginal[type='radio']:checked::after{
+        background-color:rgb(238, 238, 238);
+      }
+

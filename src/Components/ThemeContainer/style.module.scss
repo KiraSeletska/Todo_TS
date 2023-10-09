@@ -1,0 +1,63 @@
+.themeButton {
+    font-size: 15px;
+    height: 25px;
+    width: 70px;
+    color: #7f7f7f;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+  }
+  
+  .themeButton::before,
+  .themeButton::after {
+    background-color: rgb(182, 182, 182);
+    box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+      -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+      7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+  }
+  .themeButton:hover {
+    color: rgb(198, 198, 198);
+    background-color: rgb(255, 255, 255);
+  }
+  .themeButton span::before,
+  .themeButton span::after {
+    background-color: rgb(182, 182, 182);
+  }
+  
+  .themeButtonLight::before,
+  .themeButtonLight::after {
+    background-color: rgb(182, 182, 182);
+    box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+      -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+      7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+  }
+  .themeButtonLight:hover {
+    color: rgb(198, 198, 198);
+    background-color: rgb(255, 255, 255);
+  }
+  .themeButtonLight span::before,
+  .themeButtonLight span::after {
+    background-color: rgb(182, 182, 182);
+  }
+  
+  .themeButtonDark::before,
+  .themeButtonDark::after {
+    background-color: rgb(245, 255, 190);
+    box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+      -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+      7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+  }
+  .themeButtonDark:hover {
+    color: rgb(245, 255, 190);
+    background-color: rgb(67, 67, 67);
+  }
+  .themeButtonDark span::before,
+  .themeButtonDark span::after {
+    background-color: rgb(245, 255, 190);
+  }
+  

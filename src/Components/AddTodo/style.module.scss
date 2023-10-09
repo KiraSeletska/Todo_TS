@@ -1,0 +1,145 @@
+.addForm{
+    display: grid;
+    grid-template-columns: 1fr 80px 80px 50px;
+    gap: 5px;
+    margin: 15px;
+  
+  }
+  .formText{
+  border: none;
+  outline: none;
+  padding:10px;
+  border-radius:10px;
+  box-shadow:4px 4px 10px rgba(0,0,0,0.2);
+  }
+
+  .formText::placeholder{
+    font-size: 10px;
+    font-style: italic;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300px;
+  }
+
+  .formText::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+  .formText::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+  .formText:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+  .formText:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+  .formText:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+  .formText:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+  .formText:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+  .formText:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+
+  .time{
+    border: none;
+    outline: none;
+    font-size: 10px;
+    border-radius:10px;
+    box-shadow:4px 4px 10px rgba(0,0,0,0.2);
+    font-family: 'Montserrat', sans-serif;
+   
+    }
+  
+  .select{
+    border: none;
+    outline: none;
+    font-size: 10px;
+    border-radius:10px;
+    box-shadow:4px 4px 10px rgba(0,0,0,0.2);
+    font-family: 'Montserrat', sans-serif;
+  }
+  .select option{
+    color: rgb(72, 72, 72);
+  }
+
+  .customBtn {
+    color: #79c27c;
+    border-radius: 5px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+   
+  }
+  .btn7 {
+  //background: linear-gradient(0deg, rgb(162, 162, 171) 0%, rgb(180, 187, 255) 100%);
+    line-height: 42px;
+    padding: 0;
+    border: none;
+  }
+  .btn7 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .btn7:before,
+  .btn7:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    background: rgb(39, 46, 192);
+    box-shadow:
+     -7px -7px 20px 0px rgba(255,255,255,.9),
+     -4px -4px 5px 0px rgba(255,255,255,.9),
+     7px 7px 20px 0px rgba(0,0,0,.2),
+     4px 4px 5px 0px rgba(0,0,0,.3);
+    transition: all 0.3s ease;
+  }
+  .btn7:before{
+     height: 0%;
+     width: 2px;
+  }
+  .btn7:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn7:hover{
+    color: rgb(39, 46, 192);
+    background: transparent;
+  }
+  .btn7:hover:before {
+    height: 100%;
+  }
+  .btn7:hover:after {
+    width: 100%;
+  }
+  .btn7 span:before,
+  .btn7 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background: rgb(39, 46, 192);
+    box-shadow:
+     -7px -7px 20px 0px rgba(255,255,255,.9),
+     -4px -4px 5px 0px rgba(255,255,255,.9),
+     7px 7px 20px 0px rgba(0,0,0,.2),
+     4px 4px 5px 0px rgba(0,0,0,.3);
+    transition: all 0.3s ease;
+  }
+  .btn7 span:before {
+    width: 2px;
+    height: 0%;
+  }
+  .btn7 span:after {
+    height: 2px;
+    width: 0%;
+  }
+  .btn7 span:hover:before {
+    height: 100%;
+  }
+  .btn7 span:hover:after {
+    width: 100%;
+  }
+
+  
+
+
