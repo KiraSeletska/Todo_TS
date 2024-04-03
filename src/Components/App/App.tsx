@@ -4,7 +4,6 @@ import { useState } from "react";
 import { AddTodo } from "../AddTodo";
 import { AddRepository } from "../AddRepository";
 import styles from "./App.module.scss";
-import { ThemeContext } from "../ThemeContainer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCheck,
@@ -18,6 +17,10 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { Repository } from "../AddRepository";
 import { Header } from "../Header";
+
+// AND WHY I MADE SO TERABLE ARCHITECTURE....
+//Friend, if you see this, SORRY! I was young and flighty. My eyes hurt just like yours... 
+// 😥🙏
 
 export interface TodoItem {
   id: string;
@@ -34,13 +37,6 @@ export const getRandomID = () => {
   return int.toString(36);
 };
 
-/*
-  const makeReposirorys = () => {
-    const originalRepositorys = new Set(
-      Array.from(todoState, ({ repository }) => repository)
-    );
-    return Array.from(originalRepositorys);
-  };*/
 
 export const App = () => {
   const read = (arg: string) => {
